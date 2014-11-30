@@ -1,0 +1,249 @@
+var args = arguments[0] || {};
+
+// create a window and view for adding   
+var addWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Add Exercise'
+});
+
+var addView = Titanium.UI.createView({
+	left: 0,
+});
+
+var label1 = Titanium.UI.createLabel({
+    text: 'Muscle Group',
+    top: 10,
+    height: 40,
+    left: 0
+});
+
+var label2 = Titanium.UI.createLabel({
+    text: 'Time',
+    top: 140,
+    height: 30,
+    left: 10
+});
+
+var label3 = Titanium.UI.createLabel({
+    text: 'Sets',
+    top: 140,
+    height: 30,
+    left: 50
+});
+
+var label4 = Titanium.UI.createLabel({
+    text: 'Reps',
+    top: 140,
+    height: 30,
+    left: 90
+});
+var label5 = Titanium.UI.createLabel({
+    text: 'Weight',
+    top: 140,
+    height: 30,
+    left: 130
+});
+
+// create a submit button
+var submit = $.UI.create('Button', {
+   bottom: 0,
+   title: 'Submit',
+   id: "button"
+});
+
+// create a dropdown list
+var picker = Ti.UI.createPicker({
+	top: 55, 
+	height: 40, 
+});
+
+var time = false;
+var sets = false;
+var reps = false;
+var weight = false;
+
+
+// Time checkbox
+var checkbox1 = Ti.UI.createButton({
+    title: '',
+    top: 100,
+    left: 10,
+    width: 30,
+    height: 30,
+    borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#aaa',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false //value is a custom property in this casehere.
+});
+ 
+//Attach some simple on/off actions
+checkbox1.on = function() {
+    this.backgroundColor = '#007690';
+    this.title='\u2713';
+    this.value = true;
+};
+ 
+checkbox1.off = function() {
+    this.backgroundColor = '#aaa';
+    this.title='';
+    this.value = false;
+};
+ 
+checkbox1.addEventListener('click', function(e) {
+    if(false == e.source.value) {
+        e.source.on();
+        time = true;
+    } else {
+        e.source.off();
+        time = false;
+    }
+});
+
+
+// sets checkbox
+var checkbox2 = Ti.UI.createButton({
+    title: '',
+    top: 100,
+    left: 50,
+    width: 30,
+    height: 30,
+    borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#aaa',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false //value is a custom property in this casehere.
+});
+ 
+//Attach some simple on/off actions
+checkbox2.on = function() {
+    this.backgroundColor = '#007690';
+    this.title='\u2713';
+    this.value = true;
+};
+ 
+checkbox2.off = function() {
+    this.backgroundColor = '#aaa';
+    this.title='';
+    this.value = false;
+};
+ 
+checkbox2.addEventListener('click', function(e) {
+    if(false == e.source.value) {
+        e.source.on();
+        sets = true;
+    } else {
+        e.source.off();
+        sets = false;
+    }
+});
+
+
+// reps checkbox
+var checkbox3 = Ti.UI.createButton({
+    title: '',
+    top: 100,
+    left: 90,
+    width: 30,
+    height: 30,
+    borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#aaa',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false //value is a custom property in this casehere.
+});
+ 
+//Attach some simple on/off actions
+checkbox3.on = function() {
+    this.backgroundColor = '#007690';
+    this.title='\u2713';
+    this.value = true;
+};
+ 
+checkbox3.off = function() {
+    this.backgroundColor = '#aaa';
+    this.title='';
+    this.value = false;
+};
+ 
+checkbox3.addEventListener('click', function(e) {
+    if(false == e.source.value) {
+        e.source.on();
+        reps = true;
+    } else {
+        e.source.off();
+        reps = false;
+    }
+});
+
+
+// weight checkbox
+var checkbox4 = Ti.UI.createButton({
+    title: '',
+    top: 100,
+    left: 130,
+    width: 30,
+    height: 30,
+    borderColor: '#666',
+    borderWidth: 2,
+    borderRadius: 3,
+    backgroundColor: '#aaa',
+    color: '#fff',
+    font:{fontSize: 25, fontWeight: 'bold'},
+    value: false //value is a custom property in this casehere.
+});
+ 
+//Attach some simple on/off actions
+checkbox4.on = function() {
+    this.backgroundColor = '#007690';
+    this.title='\u2713';
+    this.value = true;
+};
+ 
+checkbox4.off = function() {
+    this.backgroundColor = '#aaa';
+    this.title='';
+    this.value = false;
+};
+ 
+checkbox4.addEventListener('click', function(e) {
+    if(false == e.source.value) {
+        e.source.on();
+        weight = true;
+    } else {
+        e.source.off();
+        weight = false;
+    }
+});
+
+// get the muscle groups
+groupsdata = [];
+var groups = args.db.execute('SELECT * FROM groups');
+
+while (groups.isValidRow())
+{
+	var row = Ti.UI.createPickerRow({title: groups.fieldByName('name')});
+	groupsdata.push(row);
+	groups.next();
+}
+
+picker.add(groupsdata);
+addView.add(picker);
+addView.add(checkbox1);
+addView.add(checkbox2);
+addView.add(checkbox3);
+addView.add(checkbox4);
+addView.add(label1);
+addView.add(label2);
+addView.add(label3);
+addView.add(label4);
+addView.add(label5);
+addWin.add(addView);
+addWin.open();

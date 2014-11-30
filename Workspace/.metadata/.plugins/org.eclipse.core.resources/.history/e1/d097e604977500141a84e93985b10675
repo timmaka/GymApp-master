@@ -1,0 +1,11 @@
+var args = arguments[0] || {};
+
+// get the muscle groups
+groupsdata = [];
+var groups = args.db.execute('SELECT * FROM groups');
+while (groups.isValidRow())
+{
+	groupsdata.push(Ti.UI.createPickerRow({title: groups.fieldByName('name')}));
+}
+$.picker.add(data);
+$.index.open();

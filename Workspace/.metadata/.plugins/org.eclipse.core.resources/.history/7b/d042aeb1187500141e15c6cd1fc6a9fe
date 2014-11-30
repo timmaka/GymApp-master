@@ -1,0 +1,34 @@
+// create a window and view for past exercises
+var pastWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Past exercises'
+});
+
+var pastview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+// get the arguments that were passed in.
+var args = arguments[0] || {};
+
+// get previous workouts
+var query = args.db.execute("SELECT * FROM workouts");
+
+var i = 0;
+
+while (query.isValidRow())
+{
+	pastview.add($.UI.create('Button', {
+	    top: 10 + i * 60,
+	    title: query.fieldByName('timestamp'),
+	    id: 'button'
+	}));
+	groups.next();
+	i++;
+}
+
+pastWin.add(pastview);
+pastWin.open();

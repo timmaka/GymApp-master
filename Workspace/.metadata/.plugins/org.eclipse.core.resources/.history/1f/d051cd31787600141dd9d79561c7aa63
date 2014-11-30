@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container">
+		<View layout='vertical'> 
+			<Button id="button" onClick="newWorkout" title="New Workout" top=10/>
+			<Button id="button" onClick="resume" title="Continue Workout" top=10/>
+			<Button id="button" onClick="pastWorkouts" title="Past Workouts" top=10/>
+			<Button id="button" onClick="addexercise" title="Add Exercise" top=10/>
+		</View>
+	</Window>
+</Alloy>

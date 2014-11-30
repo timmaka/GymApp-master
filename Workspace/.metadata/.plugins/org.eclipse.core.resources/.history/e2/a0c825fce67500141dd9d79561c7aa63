@@ -1,0 +1,8 @@
+".container": {
+	backgroundColor:"black"
+}
+
+"button": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+}

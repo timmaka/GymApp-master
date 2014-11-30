@@ -1,0 +1,18 @@
+// get the arguments that were passed in.
+var args = arguments[0] || {};
+
+// initialize a collection
+var myWorkouts = Alloy.Collections.workouts;
+
+// get previous workouts
+var query = args.db.execute("SELECT * FROM workouts");
+
+while (query.isValidRow())
+{
+	var workout = Alloy.createModel('past', { 
+    	code : query.fieldByName('id'), 
+    	time : query.fieldByName('timestamp')
+	});
+	myWorkouts.add(workout); 
+	workout.save();
+}

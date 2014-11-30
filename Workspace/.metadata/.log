@@ -1,0 +1,851 @@
+!SESSION 2014-11-23 22:09:20.596 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\_Uni\GymApp\Workspace
+
+!ENTRY org.eclipse.ui 2 0 2014-11-23 22:09:30.801
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:09:30.801
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:09:30.801
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-23 22:09:45.119
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-23 22:17:38.580
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-11-23 22:17:39.527
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.appcelerator.titanium.android.core.AndroidSDKLocator$1
+!SESSION 2014-11-23 22:17:39.546 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-23 22:17:46.992
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:17:46.993
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:17:46.993
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-23 22:17:56.847
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-23 22:21:45.773
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-23 22:25:14.786 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\_Uni\GymApp\Workspace
+
+!ENTRY org.eclipse.ui 2 0 2014-11-23 22:25:21.168
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:25:21.169
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-23 22:25:21.169
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-23 22:25:34.539
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-23 22:30:30.387
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-24 12:42:54.944 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-24 12:42:57.452
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-24 12:42:57.452
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-24 12:42:57.452
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-24 12:43:06.432
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-11-24 18:48:10.110
+!MESSAGE There are no Android devices connected
+
+!ENTRY org.eclipse.ui 4 0 2014-11-24 18:58:31.591
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Argument not valid)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.appcelerator.titanium.rcp.IDEApplication.start(IDEApplication.java:126)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9736)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9830)
+	at org.eclipse.jface.text.TextPresentation.applyTextPresentation(TextPresentation.java:55)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.internalShowContextFrame(ContextInformationPopup.java:427)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.internalShowContextInfo(ContextInformationPopup.java:324)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.access$5(ContextInformationPopup.java:315)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup$1.run(ContextInformationPopup.java:216)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.showContextProposals(ContextInformationPopup.java:198)
+	at com.aptana.editor.common.contentassist.ContentAssistant$AutoAssistListener$1.run(ContentAssistant.java:472)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-11-24 20:59:16.626
+!MESSAGE There are no Android devices connected
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-11-25 00:58:14.465
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  null
+!STACK 0
+
+javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:367)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:129)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:105)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:187)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:266)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:214)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:339)
+	... 12 more
+---------
+java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:266)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:214)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:339)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:129)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:105)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:187)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+--------------- linked to ------------------
+javax.xml.xpath.XPathExpressionException
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:200)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:367)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:129)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:105)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:187)
+	... 9 more
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:266)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:214)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:339)
+	... 12 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 03:26:50.736
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 03:26:54.004 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 03:26:56.596
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 03:26:56.596
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 03:26:56.596
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 03:29:05.969
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 03:37:36.347
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 10:55:02.753 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 10:55:04.324
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 10:55:04.324
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 10:55:04.324
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 10:56:48.816
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 12:43:17.201
+!MESSAGE An internal error occurred during: "Update Android info".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.getLaunchShortcutManager(AndroidSDKLocator.java:433)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.parseTiInfo(AndroidSDKLocator.java:285)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.updateTiInfo(AndroidSDKLocator.java:220)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.access$0(AndroidSDKLocator.java:217)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator$1.run(AndroidSDKLocator.java:237)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 12:43:17.565
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 12:43:16.843 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 12:43:19.528
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 12:43:19.528
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 12:43:19.528
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 12:44:52.301
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2014-11-25 14:45:38.549
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/C:/_Uni/GymApp/Workspace/Gym%20app/app/views/past.xml for Alloy XML validation
+!STACK 0
+java.lang.Error: Error: could not match input
+	at com.aptana.xml.core.parsing.XMLScanner.zzScanError(XMLScanner.java:538)
+	at com.aptana.xml.core.parsing.XMLScanner.yylex(XMLScanner.java:692)
+	at com.aptana.xml.core.parsing.XMLScanner.nextToken(XMLScanner.java:313)
+	at com.aptana.xml.core.parsing.XMLParser.advance(XMLParser.java:148)
+	at com.aptana.xml.core.parsing.XMLParser.parseAll(XMLParser.java:142)
+	at com.aptana.xml.core.parsing.XMLParser.parse(XMLParser.java:113)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.noCacheParse(ParsingEngine.java:424)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:229)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:230)
+	at com.aptana.index.core.build.BuildContext.parse(BuildContext.java:140)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:111)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:95)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:215)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2014-11-25 14:59:33.449
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/C:/_Uni/GymApp/Workspace/Gym%20app/app/views/past.xml for Alloy XML validation
+!STACK 0
+java.lang.Error: Error: could not match input
+	at com.aptana.xml.core.parsing.XMLScanner.zzScanError(XMLScanner.java:538)
+	at com.aptana.xml.core.parsing.XMLScanner.yylex(XMLScanner.java:692)
+	at com.aptana.xml.core.parsing.XMLScanner.nextToken(XMLScanner.java:313)
+	at com.aptana.xml.core.parsing.XMLParser.advance(XMLParser.java:148)
+	at com.aptana.xml.core.parsing.XMLParser.parseAll(XMLParser.java:142)
+	at com.aptana.xml.core.parsing.XMLParser.parse(XMLParser.java:113)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.noCacheParse(ParsingEngine.java:424)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:229)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:230)
+	at com.aptana.index.core.build.BuildContext.parse(BuildContext.java:140)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:111)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:95)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:215)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2014-11-25 15:00:10.256
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/C:/_Uni/GymApp/Workspace/Gym%20app/app/views/past.xml for Alloy XML validation
+!STACK 0
+java.lang.Error: Error: could not match input
+	at com.aptana.xml.core.parsing.XMLScanner.zzScanError(XMLScanner.java:538)
+	at com.aptana.xml.core.parsing.XMLScanner.yylex(XMLScanner.java:692)
+	at com.aptana.xml.core.parsing.XMLScanner.nextToken(XMLScanner.java:313)
+	at com.aptana.xml.core.parsing.XMLParser.advance(XMLParser.java:148)
+	at com.aptana.xml.core.parsing.XMLParser.parseAll(XMLParser.java:142)
+	at com.aptana.xml.core.parsing.XMLParser.parse(XMLParser.java:113)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.noCacheParse(ParsingEngine.java:424)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:229)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:230)
+	at com.aptana.index.core.build.BuildContext.parse(BuildContext.java:140)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:111)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:95)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:215)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:423)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:430)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:126)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:826)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.aptana.index.core 4 0 2014-11-25 15:00:45.232
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to delete index file C:\_Uni\GymApp\Workspace\.metadata\.plugins\com.aptana.index.core\2140485989.index
+!STACK 0
+java.io.IOException: Failed to delete index file C:\_Uni\GymApp\Workspace\.metadata\.plugins\com.aptana.index.core\2140485989.index
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:946)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2014-11-25 15:01:01.351
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/C:/_Uni/GymApp/Workspace/Gym%20app/app/views/past.xml for Alloy XML validation
+!STACK 0
+java.lang.Error: Error: could not match input
+	at com.aptana.xml.core.parsing.XMLScanner.zzScanError(XMLScanner.java:538)
+	at com.aptana.xml.core.parsing.XMLScanner.yylex(XMLScanner.java:692)
+	at com.aptana.xml.core.parsing.XMLScanner.nextToken(XMLScanner.java:313)
+	at com.aptana.xml.core.parsing.XMLParser.advance(XMLParser.java:148)
+	at com.aptana.xml.core.parsing.XMLParser.parseAll(XMLParser.java:142)
+	at com.aptana.xml.core.parsing.XMLParser.parse(XMLParser.java:113)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.noCacheParse(ParsingEngine.java:424)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:229)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:230)
+	at com.aptana.index.core.build.BuildContext.parse(BuildContext.java:140)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:111)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:95)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:215)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2014-11-25 17:01:34.725
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/C:/_Uni/GymApp/Workspace/Gym%20app/app/views/past.xml for Alloy XML validation
+!STACK 0
+java.lang.Error: Error: could not match input
+	at com.aptana.xml.core.parsing.XMLScanner.zzScanError(XMLScanner.java:538)
+	at com.aptana.xml.core.parsing.XMLScanner.yylex(XMLScanner.java:692)
+	at com.aptana.xml.core.parsing.XMLScanner.nextToken(XMLScanner.java:313)
+	at com.aptana.xml.core.parsing.XMLParser.advance(XMLParser.java:148)
+	at com.aptana.xml.core.parsing.XMLParser.parseAll(XMLParser.java:142)
+	at com.aptana.xml.core.parsing.XMLParser.parse(XMLParser.java:113)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.noCacheParse(ParsingEngine.java:424)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:229)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:230)
+	at com.aptana.index.core.build.BuildContext.parse(BuildContext.java:140)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:111)
+	at com.aptana.index.core.build.BuildContext.getAST(BuildContext.java:95)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:215)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 20:02:18.535 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-11-25 20:02:20.792
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 20:02:22.365
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 20:02:22.365
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 20:02:22.365
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 20:03:39.519
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 21:35:54.972
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 21:46:01.551 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\_Uni\GymApp\Workspace
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 21:46:03.576
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 21:46:03.576
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 21:46:03.576
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 21:47:13.077
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-25 22:00:56.873
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-25 22:01:03.932 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-25 22:01:05.400
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 22:01:05.400
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-25 22:01:05.400
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-25 22:02:13.147
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-26 01:43:04.118
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-11-26 01:43:04.876
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.appcelerator.titanium.android.core.AndroidSDKLocator$1
+!SESSION 2014-11-26 01:43:06.304 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-26 01:43:11.424
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 01:43:11.424
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 01:43:11.424
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-26 01:44:48.216
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-26 03:31:34.969
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-26 11:05:40.838 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-26 11:05:42.403
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 11:05:42.403
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 11:05:42.403
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-26 11:06:57.034
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY com.aptana.core 4 1 2014-11-26 12:35:23.191
+!MESSAGE 
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-26 13:39:11.180
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:234)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-26 13:39:16.004 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-26 13:39:18.461
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 13:39:18.461
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 13:39:18.461
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.update.core 4 0 2014-11-26 13:39:23.795
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.update.core/debug/sdk_update Error getting release lists from url 'https://api.appcelerator.com/p/v2/release-list?name=mobilesdk'
+!STACK 0
+java.net.UnknownHostException: api.appcelerator.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:160)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getReleaseListFromURL(TitaniumSDKUpdater.java:552)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getSDKReleases(TitaniumSDKUpdater.java:516)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getLatestSDKRelease(TitaniumSDKUpdater.java:602)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasSDKUpdates(TitaniumSDKUpdater.java:255)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:218)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:199)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2555)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2014-11-26 13:39:25.022
+!MESSAGE Connection to http://download.appcelerator.com/appcelerator/studio/standalone/update/stable/p2.index failed on download.appcelerator.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.appcelerator.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:894)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1286)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1239)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1155)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1091)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1074)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:621)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:657)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2014-11-26 13:39:25.267
+!MESSAGE Unknown Host: http://download.appcelerator.com/appcelerator/studio/standalone/update/stable/content.xml
+!STACK 0
+java.net.UnknownHostException: download.appcelerator.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1243)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1155)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1091)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-26 20:46:09.991 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-26 20:46:32.250
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 20:46:32.250
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-26 20:46:32.250
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-26 20:47:40.986
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.ui 4 0 2014-11-27 00:42:42.527
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Argument not valid)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.appcelerator.titanium.rcp.IDEApplication.start(IDEApplication.java:126)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9736)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9830)
+	at org.eclipse.jface.text.TextPresentation.applyTextPresentation(TextPresentation.java:55)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.internalShowContextFrame(ContextInformationPopup.java:427)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.internalShowContextInfo(ContextInformationPopup.java:324)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.access$5(ContextInformationPopup.java:315)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup$1.run(ContextInformationPopup.java:216)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at com.aptana.editor.common.contentassist.ContextInformationPopup.showContextProposals(ContextInformationPopup.java:198)
+	at com.aptana.editor.common.contentassist.ContentAssistant$AutoAssistListener$1.run(ContentAssistant.java:472)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY com.aptana.git.core 4 0 2014-11-27 16:28:30.428
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Unable to run update-index: 
+
+!ENTRY com.aptana.git.core 4 1 2014-11-27 16:28:30.433
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 128 2014-11-27 16:28:30.433
+!MESSAGE 
+
+!ENTRY com.aptana.git.core 4 0 2014-11-27 20:11:31.635
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Unable to run update-index: 
+
+!ENTRY com.aptana.git.core 4 1 2014-11-27 20:11:31.763
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 128 2014-11-27 20:11:31.763
+!MESSAGE 
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-11-28 01:00:34.722
+!MESSAGE There are no Android devices connected
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-28 01:27:39.286
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-11-28 01:27:52.641 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-11-28 01:27:55.995
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-28 01:27:55.995
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-28 01:27:55.995
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-11-28 01:29:23.347
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone

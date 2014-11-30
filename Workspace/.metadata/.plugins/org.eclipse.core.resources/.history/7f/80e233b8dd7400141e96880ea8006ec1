@@ -1,0 +1,8 @@
+<Alloy>
+    <Collection src="workouts"/>
+    <Window class="container">
+        <TableView dataCollection="workouts">
+            <TableViewRow time="{time}"</TableViewRow>
+        </TableView>
+    </Window>
+</Alloy>  

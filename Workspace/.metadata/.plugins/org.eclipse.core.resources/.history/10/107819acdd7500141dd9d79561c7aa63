@@ -1,0 +1,93 @@
+// clear built in database
+var Tdb = Ti.Database.open ('_alloy_');
+Tdb.execute ('DROP TABLE IF EXISTS workouts');
+Tdb.close ();
+
+// WORK IN PROGRESS TO MAKE INDEX DYNAMIC AND TO STORE THE WORKOUT ID THAT IS PROGRESS
+// SO THAT THE APP CAN BE CLOSED WHILE THE WORKOUT IS IN PROGRESS
+// // create a window and view for muscle groups
+// var indexWin = Titanium.UI.createWindow({
+    // backgroundColor:'#000000',
+    // layout:'vertical',
+    // title: 'Gym App'
+// });
+// 
+// var indexView = Titanium.UI.createScrollView({
+    // scrollType:"vertical",
+    // left:'0dp',
+    // width:'100%'
+// });
+
+var newBut = $.UI.create('Button', {
+    top: 10 + k * 60,
+    title: 'New Workout',
+    id: 'button'
+});
+
+var continueBut = $.UI.create('Button', {
+    top: 10 + k * 60,
+    title: 'Continue Workout',
+    id: 'button'
+});
+
+var pastBut = $.UI.create('Button', {
+    top: 10 + k * 60,
+    title: 'Past Workouts',
+    id: 'button'
+});
+
+var addBut = $.UI.create('Button', {
+    top: 10 + k * 60,
+    title: 'Add exercise',
+    id: 'button'
+});
+
+// open the database
+var db = Ti.Database.install('/database.db', 'gymdatabase');
+
+var workout_id;
+	
+function newWorkout (e)
+{
+
+	// get the last workouts id
+	var workout_info = db.execute('SELECT id FROM workouts ORDER BY id DESC LIMIT 1');
+	
+    // set an id for the new workout
+	if (workout_info.isValidRow())
+	{
+		workout_id = workout_info.fieldByName('id') + 1;	
+	}
+	else
+	{
+		workout_id = 1;
+	}
+	
+	// open the select window passing the database into it
+	var selectWin = Alloy.createController('select', {db:db, workout_id: workout_id}).getView(); 
+}
+function resume (e)
+{
+	if (typeof workout_id == 'undefined')
+	{
+		alert ("You haven't started a workout yet!");
+	}
+	else
+	{
+		// open the select window passing the database into it
+		var selectWin = Alloy.createController('select', {db:db, workout_id: workout_id}).getView(); 
+	}
+}
+
+function pastWorkouts (e)
+{
+	var pastView = Alloy.createController('past', {db:db}).getView();
+}
+
+function addexercise (e)
+{
+	var addView = Alloy.createController('add', {db:db}).getView();
+}
+
+// open the index window
+$.index.open();

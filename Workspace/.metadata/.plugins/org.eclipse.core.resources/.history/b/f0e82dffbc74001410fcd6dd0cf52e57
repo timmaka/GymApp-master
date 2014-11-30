@@ -1,0 +1,95 @@
+var formsWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Add exercise'
+});
+var formsview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var forms = [];
+var submit_button = null;
+		
+
+	var exercise_name = e.source.title;
+	var chosen = db.execute("SELECT * FROM list where name = ?", e.source.title);
+	var p = 0;
+	for (i = 0; i < forms.length; i++)
+	{
+		formsview.remove(forms[i]);
+	}
+	
+	var options = ['time', 'sets', 'reps', 'weight'];
+	for (z = 0; z < options.length; z++)
+	{
+		if (chosen.fieldByName(options[z]) == 1)
+		{
+			var field = Ti.UI.createTextField({
+				keyboardType:Titanium.UI.KEYBOARD_NUMBER_PAD,
+				color: '#336699',
+				hintText: options[z],
+				height: 35,
+				top: 10 + 45 * p,
+				width: '100%',
+			});
+			forms.push(field);
+			formsview.add(field);
+			p++;
+		}
+	}
+	formsview.remove(submit);
+	var submit = $.UI.create('Button', {
+	   top: 10 + p * 45,
+	   title: 'Submit',
+	   id: "button"
+	});
+	if (submit_button != null)
+	{
+		submit_button = submit;
+	}
+	submit.addEventListener('click', function (e) {
+		var not_filled = false;
+		for (i = 0; i < forms.length; i++)
+		{
+			if (forms[i].getValue() == '')
+			{
+				alert("All fields aren't filled");
+				not_filled = true;
+			}
+		}
+		if (not_filled == false)
+		{
+			var query = "INSERT INTO workout_info (exercise, workout_id, ";
+			for (i = 0; i < forms.length; i++)
+			{
+				query = query.concat(forms[i].hintText);
+				if (i+1 != forms.length)
+				{
+					query = query.concat(", ");
+				}
+			}
+			query = query.concat(") VALUES (");
+			query = query.concat("'" + exercise_name + "'");
+			query = query.concat(", ");
+			query = query.concat(workout_id);
+			query = query.concat(", ");
+			for (i = 0; i < forms.length; i++)
+			{
+				query = query.concat(forms[i].getValue());
+				if (i+1 != forms.length)
+				{
+					query = query.concat(", ");
+				}
+			}
+			query = query.concat(")");
+			db.execute(query);
+			formsWin.close();
+			exercisesWin.close();
+		}
+	});
+	formsview.add(submit);
+	chosen.close();
+	formsWin.add(formsview);
+	formsWin.open();

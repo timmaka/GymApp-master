@@ -1,0 +1,154 @@
+var mainWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical'
+});
+     
+var exercisesWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical'
+});
+var exercisesview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var formsWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical'
+});
+var formsview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var groupview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+ 
+var workout_id = 1;
+var db = Ti.Database.install('/database.db', 'dymdatabase');
+var groups = db.execute('SELECT * FROM groups');
+var i = 0;
+while (groups.isValidRow())
+{
+	groupview.add(Titanium.UI.createButton({
+		id: 'button',
+	    top: 10 + i * 60,
+	    title: groups.fieldByName('name'),
+	}));
+	groups.next();
+	i++;
+}
+var exercise_buttons = [];
+groups.close();
+groupview.addEventListener('click', function (e) {
+	if (e.source.title != null)
+	{
+		var exercises = db.execute("SELECT * FROM list where muscle_group = ?", e.source.title);
+		var k = 0;
+		for (i = 0; i < exercise_buttons.length; i++)
+		{
+			exercisesview.remove(exercise_buttons[i]);
+		}
+		while (exercises.isValidRow())
+		{
+			var button = Titanium.UI.createButton({
+				id: 'button',
+			    top: 10 + k * 60,
+			    title: exercises.fieldByName('name'),
+			});
+			exercise_buttons.push(button);
+			exercisesview.add(button);
+			exercises.next();
+			k++;
+		}
+		var forms = [];
+		exercisesview.addEventListener('click', function(e) {
+			if (e.source.title != null)
+			{
+				var exercise_name = e.source.title;
+				var chosen = db.execute("SELECT * FROM list where name = ?", e.source.title);
+				var p = 0;
+				for (i = 0; i < forms.length; i++)
+				{
+					formsview.remove(forms[i]);
+				}
+				
+				var options = ['time', 'sets', 'reps', 'weight'];
+				for (z = 0; z < options.length; z++)
+				{
+					if (chosen.fieldByName(options[z]) == 1)
+					{
+						var field = Ti.UI.createTextField({
+							keyboardType:Titanium.UI.KEYBOARD_NUMBER_PAD,
+  							color: '#336699',
+							hintText: options[z],
+							height: 35,
+							top: 10 + 45 * p,
+							width: '100%',
+						});
+						forms.push(field);
+						formsview.add(field);
+						p++;
+					}
+				}
+				var submit = Titanium.UI.createButton({
+					id: 'button',
+				    top: 10 + p * 45,
+				    title: 'Submit',
+				});
+				submit.addEventListener('click', function (e) {
+					for (i = 0; i < forms.length; i++)
+					{
+						if (forms[i].getValue() == '')
+						{
+							alert("All fields aren't filled");
+							break;
+						}
+					}
+					var query = "INSERT INTO workout_info (exercise, workout_id, ";
+					for (i = 0; i < forms.length; i++)
+					{
+						query = query.concat(forms[i].hintText);
+						if (i+1 != forms.length)
+						{
+							query = query.concat(", ");
+						}
+					}
+					query = query.concat(") VALUES (");
+					query = query.concat("'" + exercise_name + "'");
+					query = query.concat(", ");
+					query = query.concat(workout_id);
+					query = query.concat(", ");
+					for (i = 0; i < forms.length; i++)
+					{
+						query = query.concat(forms[i].getValue());
+						if (i+1 != forms.length)
+						{
+							query = query.concat(", ");
+						}
+					}
+					query = query.concat(")");
+					db.execute(query);
+					formsWin.close();
+					exercisesWin.close();
+				});
+				formsview.add(submit);
+				chosen.close();
+				formsWin.add(formsview);
+				formsWin.open();
+			}
+		});
+		exercises.close();
+		exercisesWin.add(exercisesview);
+		exercisesWin.open();
+	}
+});
+
+mainWin.add(groupview);
+mainWin.open();
+

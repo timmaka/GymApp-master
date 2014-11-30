@@ -1,0 +1,160 @@
+// create a window and view for past exercises
+var pastWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Past exercises'
+});
+
+var pastview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+// Create a window and view for workout details
+var detailWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'past exercise'
+});
+
+var detailview = Titanium.UI.createView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var data = [];
+var workout_id;
+var table;
+
+// get the arguments that were passed in.
+var args = arguments[0] || {};
+
+// get previous workouts
+var query = args.db.execute("SELECT * FROM workouts ORDER BY id DESC");
+
+var i = 0;
+
+while (query.isValidRow())
+{
+	pastview.add($.UI.create('Button', {
+	    top: 10 + i * 60,
+	    title: query.fieldByName('timestamp'),
+	    code: query.fieldByName('id'),
+	    id: 'button'
+	}));
+	query.next();
+	i++;
+}
+
+pastview.addEventListener('click', function (e) {
+	// to make sure a blank area was not clicked
+	if (e.source.title != null)
+	{
+		if (typeof table != 'undefined' )
+		{
+			detailview.remove(table);
+		}
+		data = [];
+		
+		workout_id = e.source.code;
+		// get previous workouts
+		var details = args.db.execute("SELECT * FROM workout_info where workout_id = ?", workout_id);
+		
+		var p = 0;
+		var row = Ti.UI.createTableViewRow({
+		    height:'auto',
+		});
+		var label1 = Titanium.UI.createLabel({
+		    text:'Exercise',
+		    width: '50%',
+		    left: 0
+		});
+		var label2 = Titanium.UI.createLabel({
+		    text:'Time',
+		    left: '40%',
+		    width: '15%'
+		});
+		var label3 = Titanium.UI.createLabel({
+		    text:'Sets',
+		    left: '55%',
+		    width: '15%'
+		});
+		var label4 = Titanium.UI.createLabel({
+		    text:'Reps',
+		    left: '70%',
+		    width: '15%'
+		});
+		var label5 = Titanium.UI.createLabel({
+		    text:'Weight',
+		    left: '85%',
+		    width: '15%'
+		});
+		row.add(label1);
+		row.add(label2);
+		row.add(label3);
+		row.add(label4);
+		row.add(label5);
+		data.push(row);
+		while (details.isValidRow())
+		{
+			var row = Ti.UI.createTableViewRow({
+			    height:'auto',
+			});
+			var label1 = Titanium.UI.createLabel({
+			    text: details.fieldByName('exercise'),
+			    width: '40%',
+			    left: 0
+			});
+			var label2 = Titanium.UI.createLabel({
+			    text: details.fieldByName('time'),
+			    left: '40%',
+			    width: '15%'
+			});
+			var label3 = Titanium.UI.createLabel({
+			    text: details.fieldByName('sets'),
+			    left: '55%',
+			    width: '15%'
+			});
+			var label4 = Titanium.UI.createLabel({
+			    text: details.fieldByName('reps'),
+			    left: '70%',
+			    width: '15%'
+			});
+			var label5 = Titanium.UI.createLabel({
+			    text: details.fieldByName('weight'),
+			    left: '85%',
+			    width: '15%'
+			});
+			row.add(label1);
+			row.add(label2);
+			row.add(label3);
+			row.add(label4);
+			row.add(label5);
+			data.push(row);
+			details.next();
+		}
+	}
+	table = Titanium.UI.createTableView({
+		data: data,
+	});
+
+	var del = $.UI.create('Button', {
+	   title: 'Delete',
+	   id: "button",
+	   bottom: 0
+	});
+	del.addEventListener('click', function (e) {
+		args.db.execute("DELETE FROM workouts where workout_id = ?", workout_id);
+		args.db.execute("DELETE FROM workout_info where workout_id = ?", workout_id);
+	});
+	
+	detailview.add(table);
+	detailview.add(del);
+	detailWin.add(detailview);
+	detailWin.open();
+});
+
+pastWin.add(pastview);
+pastWin.open();

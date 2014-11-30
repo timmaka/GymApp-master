@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor:"black"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+}
+
+"#label": {
+	font: {
+		fontSize: 32
+	},
+	color: '#3333FF'
+}

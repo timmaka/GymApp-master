@@ -1,0 +1,67 @@
+// clear built in database
+var Tdb = Ti.Database.open ('_alloy_');
+Tdb.execute ('DROP TABLE IF EXISTS workouts');
+Tdb.close ();
+
+// // create a window and view for muscle groups
+// var indexWin = Titanium.UI.createWindow({
+    // backgroundColor:'#000000',
+    // layout:'vertical',
+    // title: 'Gym App'
+// });
+// 
+// var indexView = Titanium.UI.createScrollView({
+    // scrollType:"vertical",
+    // left:'0dp',
+    // width:'100%'
+// });
+
+// open the database
+var db = Ti.Database.install('/database.db', 'gymdatabase');
+
+var workout_id;
+	
+function newWorkout (e)
+{
+
+	// get the last workouts id
+	var workout_info = db.execute('SELECT id FROM workouts ORDER BY id DESC LIMIT 1');
+	
+    // set an id for the new workout
+	if (workout_info.isValidRow())
+	{
+		workout_id = workout_info.fieldByName('id') + 1;	
+	}
+	else
+	{
+		workout_id = 1;
+	}
+	
+	// open the select window passing the database into it
+	var selectWin = Alloy.createController('select', {db:db, workout_id: workout_id}).getView(); 
+}
+function resume (e)
+{
+	if (typeof workout_id == 'undefined')
+	{
+		alert ("You haven't started a workout yet!");
+	}
+	else
+	{
+		// open the select window passing the database into it
+		var selectWin = Alloy.createController('select', {db:db, workout_id: workout_id}).getView(); 
+	}
+}
+
+function pastWorkouts (e)
+{
+	var pastView = Alloy.createController('past', {db:db}).getView();
+}
+
+function addexercise (e)
+{
+	var addView = Alloy.createController("add", {db:db}).getView();
+}
+
+// open the index window
+$.index.open();

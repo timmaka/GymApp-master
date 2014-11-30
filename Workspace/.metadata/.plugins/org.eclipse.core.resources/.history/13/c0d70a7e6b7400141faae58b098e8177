@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+		<Label id="label" onClick="newWorkout">New Workout</Label>
+		<Label id="label" onClick="pastWorkouts">Past Workouts</Label>
+	</Window>
+</Alloy>

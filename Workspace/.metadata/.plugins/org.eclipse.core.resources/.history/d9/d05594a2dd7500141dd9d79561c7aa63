@@ -1,0 +1,34 @@
+var args = arguments[0] || {};
+
+// create a window and view for adding   
+var addWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Add Exercise'
+});
+
+var addView = Titanium.UI.createView({
+	left: 0,
+});
+
+// create a dropdown list
+var picker = Ti.UI.createPicker({
+	top:20,  
+});
+
+// get the muscle groups
+groupsdata = [];
+var groups = args.db.execute('SELECT * FROM groups');
+
+while (groups.isValidRow())
+{
+	var row = Ti.UI.createPickerRow({title: groups.fieldByName('name')});
+	groupsdata.push(row);
+}
+
+groupsdata[0]=Ti.UI.createPickerRow({title:'Bananas'});
+
+picker.add(groupsdata);
+addView.add(picker);
+addWin.add(addView);
+addWin.open();

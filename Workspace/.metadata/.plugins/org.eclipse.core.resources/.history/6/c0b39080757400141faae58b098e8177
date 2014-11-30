@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<View layout='vertical'> 
+			<Label id="label" onClick="newWorkout">New Workout</Label>
+			<Label id="label" onClick="pastWorkouts">Past Workouts</Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,13 @@
+"#button": {
+	font: {
+		fontSize: 20
+	},
+	width: '85%',
+	height: 50,
+	color: '#000000',
+	backgroundColor: '#F2F2F2'
+}
+
+"win": {
+	backgroundColor: '#F2F2F2'
+}

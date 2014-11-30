@@ -1,0 +1,14 @@
+// create a window and view for past exercises
+var pastWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Past exercises'
+});
+
+// get the arguments that were passed in.
+var args = arguments[0] || {};
+
+// get previous workouts
+var query = args.db.execute("SELECT * FROM workouts");
+
+

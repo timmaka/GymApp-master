@@ -1,0 +1,19 @@
+"#button": {
+	font: {
+		fontSize: 20
+	},
+	width: '96%',
+	height: 40,
+	color: '#000000',
+	backgroundColor: '#DADADA'
+}
+
+"#botbutton": {
+	font: {
+		fontSize: 24
+	},
+	width: '96%',
+	height: 40,
+	color: '#000000',
+	backgroundColor: '#C4C4C4'
+}

@@ -1,0 +1,90 @@
+// create a window and view for muscle groups
+var mainWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Muscle groups'
+});
+
+var groupview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+  
+// create a window and view for exercises   
+var exercisesWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Exercises'
+});
+var exercisesview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+// ToDo this should be dynamically selected not hard coded
+var workout_id = 1;
+
+// open the database
+var db = Ti.Database.install('/database.db', 'dymdatabase');
+
+// get the muscle groups
+var groups = db.execute('SELECT * FROM groups');
+var i = 0;
+
+// create the buttons for the muscle groups
+while (groups.isValidRow())
+{
+	groupview.add($.UI.create('Button', {
+	    top: 10 + i * 60,
+	    title: groups.fieldByName('name'),
+	    id: 'button'
+	}));
+	groups.next();
+	i++;
+}
+// close the queryd info
+groups.close();
+
+// for keeping track of the buttons you've created
+var exercise_buttons = [];
+
+// event listener for when a msucle group button is pressed
+groupview.addEventListener('click', function (e) {
+	// to make sure a blank area was not clicked
+	if (e.source.title != null)
+	{
+		var exercises = db.execute("SELECT * FROM list where muscle_group = ?", e.source.title);
+		var k = 0;
+		for (i = 0; i < exercise_buttons.length; i++)
+		{
+			exercisesview.remove(exercise_buttons[i]);
+		}
+		while (exercises.isValidRow())
+		{
+			var button = $.UI.create('Button', {
+			    top: 10 + k * 60,
+			    title: exercises.fieldByName('name'),
+			    id: 'button'
+			});
+			exercise_buttons.push(button);
+			exercisesview.add(button);
+			exercises.next();
+			k++;
+		}
+		exercisesview.addEventListener('click', function(e) {
+			if (e.source.title != null)
+			{
+				var formsWin = Alloy.createController('forms', {title: e.source.title, db: db, workout_id: workout_id}).getView;
+			}
+		});
+		exercises.close();
+		exercisesWin.add(exercisesview);
+		exercisesWin.open();
+	}
+});
+
+mainWin.add(groupview);
+mainWin.open();
+

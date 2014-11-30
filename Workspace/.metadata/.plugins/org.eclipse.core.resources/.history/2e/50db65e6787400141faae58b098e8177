@@ -1,0 +1,9 @@
+"#button": {
+	font: {
+		fontSize: 32
+	},
+	width: '100%',
+	height: Ti.UI.SIZE,
+	color: '#FFFFFF',
+	backgroundColor: '#3333FF'
+}

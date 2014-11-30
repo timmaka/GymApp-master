@@ -1,0 +1,75 @@
+var mainWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Muscle groups'
+});
+     
+var exercisesWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Exercises'
+});
+var exercisesview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var groupview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+ 
+var workout_id = 1;
+var db = Ti.Database.install('/database.db', 'dymdatabase');
+var groups = db.execute('SELECT * FROM groups');
+var i = 0;
+while (groups.isValidRow())
+{
+	groupview.add($.UI.create('Button', {
+	    top: 10 + i * 60,
+	    title: groups.fieldByName('name'),
+	    id: 'button'
+	}));
+	groups.next();
+	i++;
+}
+var exercise_buttons = [];
+groups.close();
+groupview.addEventListener('click', function (e) {
+	if (e.source.title != null)
+	{
+		var exercises = db.execute("SELECT * FROM list where muscle_group = ?", e.source.title);
+		var k = 0;
+		for (i = 0; i < exercise_buttons.length; i++)
+		{
+			exercisesview.remove(exercise_buttons[i]);
+		}
+		while (exercises.isValidRow())
+		{
+			var button = $.UI.create('Button', {
+			    top: 10 + k * 60,
+			    title: exercises.fieldByName('name'),
+			    id: 'button'
+			});
+			exercise_buttons.push(button);
+			exercisesview.add(button);
+			exercises.next();
+			k++;
+		}
+		exercisesview.addEventListener('click', function(e) {
+			if (e.source.title != null)
+			{
+				var formsWin = Alloy.createController('select').getView;
+			}
+		});
+		exercises.close();
+		exercisesWin.add(exercisesview);
+		exercisesWin.open();
+	}
+});
+
+mainWin.add(groupview);
+mainWin.open();
+

@@ -1,0 +1,10 @@
+"#button": {
+	font: {
+		fontSize: 20
+	},
+	width: '95%',
+	height: 50,
+	color: '#000000',
+	backgroundColor: '#DADADA'
+}
+

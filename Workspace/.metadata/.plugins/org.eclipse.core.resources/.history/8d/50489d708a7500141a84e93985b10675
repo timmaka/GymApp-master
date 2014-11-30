@@ -1,0 +1,195 @@
+// create a window and view for past exercises
+var pastWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'Past exercises'
+});
+
+var pastview = Titanium.UI.createScrollView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+// Create a window and view for workout details
+var detailWin = Titanium.UI.createWindow({
+    backgroundColor:'#000000',
+    layout:'vertical',
+    title: 'past exercise'
+});
+
+var detailview = Titanium.UI.createView({
+    scrollType:"vertical",
+    left:'0dp',
+    width:'100%'
+});
+
+var workout_id;
+
+// variables, where table contents are stored
+var data = [];
+var table;
+
+// get the arguments that were passed in.
+var args = arguments[0] || {};
+
+// for keeping track of workouts
+listed = [];
+
+// get previous workouts
+var query = args.db.execute("SELECT datetime(timestamp, 'localtime'), id FROM workouts ORDER BY id DESC");
+
+// generate a list of previous workouts
+var i = 0;
+while (query.isValidRow())
+{
+	var new_but =$.UI.create('Button', {
+	    top: 10 + i * 60,
+	    title: query.fieldByName('timestamp'),
+	    code: query.fieldByName('id'),
+	    id: 'button'
+	});
+	pastview.add(new_but);
+	listed.push(new_but);
+	query.next();
+	i++;
+}
+
+// Event listener for when a workout is chosen
+pastview.addEventListener('click', function (e) {
+	// to make sure a blank area was not clicked
+	if (e.source.title != null)
+	{
+		// clear table if previously used
+		if (typeof table != 'undefined' )
+		{
+			detailview.remove(table);
+		}
+		data = [];
+		
+		// get workout_id
+		workout_id = e.source.code;
+		
+		// get previous workouts
+		var details = args.db.execute("SELECT * FROM workout_info where workout_id = ?", workout_id);
+		
+		// generate tabel headers
+		var row = Ti.UI.createTableViewRow({
+		    height:'auto',
+		});
+		var label1 = Titanium.UI.createLabel({
+		    text:'Exercise',
+		    width: '50%',
+		    left: 0
+		});
+		var label2 = Titanium.UI.createLabel({
+		    text:'Time',
+		    left: '40%',
+		    width: '15%'
+		});
+		var label3 = Titanium.UI.createLabel({
+		    text:'Sets',
+		    left: '55%',
+		    width: '15%'
+		});
+		var label4 = Titanium.UI.createLabel({
+		    text:'Reps',
+		    left: '70%',
+		    width: '15%'
+		});
+		var label5 = Titanium.UI.createLabel({
+		    text:'Weight',
+		    left: '85%',
+		    width: '15%'
+		});
+		
+		// add headers to data
+		row.add(label1);
+		row.add(label2);
+		row.add(label3);
+		row.add(label4);
+		row.add(label5);
+		data.push(row);
+		
+		// populate the table
+		while (details.isValidRow())
+		{
+			var row = Ti.UI.createTableViewRow({
+			    height:'auto',
+			});
+			var label1 = Titanium.UI.createLabel({
+			    text: details.fieldByName('exercise'),
+			    width: '40%',
+			    left: 0
+			});
+			var label2 = Titanium.UI.createLabel({
+			    text: details.fieldByName('time'),
+			    left: '40%',
+			    width: '15%'
+			});
+			var label3 = Titanium.UI.createLabel({
+			    text: details.fieldByName('sets'),
+			    left: '55%',
+			    width: '15%'
+			});
+			var label4 = Titanium.UI.createLabel({
+			    text: details.fieldByName('reps'),
+			    left: '70%',
+			    width: '15%'
+			});
+			var label5 = Titanium.UI.createLabel({
+			    text: details.fieldByName('weight'),
+			    left: '85%',
+			    width: '15%'
+			});
+			row.add(label1);
+			row.add(label2);
+			row.add(label3);
+			row.add(label4);
+			row.add(label5);
+			data.push(row);
+			details.next();
+		}
+	}
+	
+	// create the table with data
+	table = Titanium.UI.createTableView({
+		data: data,
+	});
+
+	// delete button for deleting a workout
+	var del = $.UI.create('Button', {
+	   title: 'Delete',
+	   id: "button",
+	   bottom: 0
+	});
+	del.addEventListener('click', function (e) {
+		
+		// clear the workout from list of workouts
+		args.db.execute("DELETE FROM workouts where id = ?", workout_id);
+		
+		// remove all exercises from that workout
+		args.db.execute("DELETE FROM workout_info where workout_id = ?", workout_id);
+		
+		// delete the corresponding button from list of workouts
+		for (i = 0; i < listed.length; i++)
+		{
+			if(listed[i].code == workout_id)
+			{
+				pastview.remove(listed[i]);
+			}
+		}
+		// return to list of workouts
+		detailWin.close();
+	});
+	
+	// add table and button to view and open window.
+	detailview.add(table);
+	detailview.add(del);
+	detailWin.add(detailview);
+	detailWin.open();
+});
+
+// add view to window and open list of workouts.
+pastWin.add(pastview);
+pastWin.open();
